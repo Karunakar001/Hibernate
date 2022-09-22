@@ -50,7 +50,7 @@ margin-top:200px;
 		} else if (i == 2) {
 
 			String email = request.getParameter("email");
-			cdao.updateStudentEmail(i, email);
+			cdao.updateStudentEmail(j, email);
 			PrintWriter pw = response.getWriter();
 			pw.write("<html><body><h1>Data Updated Successfully</h1></body></html>");
 			RequestDispatcher rd = request.getRequestDispatcher("list.jsp");

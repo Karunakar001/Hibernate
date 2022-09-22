@@ -3,8 +3,7 @@
 <%@page import="dao.Customerdao"%>
 <%@page import="dto.Customer"%>
 <%@page import="java.util.*"%>
-<%-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%> --%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,8 +40,8 @@
 			<td><%=c.getName()%></td>
 			<td><%=c.getEmail()%></td>
 			<td><%=c.getNationality()%></td>
-			<td><a href="delete?id=<%=c.getId()%>" type="button"><button>DELETE</button></a></td>
-			<td><a href="updation.jsp?id=<%=c.getId()%>" type="button"><button>UPDATE</button></a></td>
+			<td><a href="delete?idFromListButton=<%=c.getId()%>" type="button"><button>DELETE</button></a></td>
+			<td><a href="updation.jsp?idFromListButton=<%=c.getId()%>" type="button"><button>UPDATE</button></a></td>
 		</tr>
 		<%
 		}

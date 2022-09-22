@@ -18,9 +18,9 @@
 <div style="margin-left:500px; margin-top: 100px;">
 	<a href="insertion.jsp" class="btn btn-primary btn-lg active" role="button"
 		aria-pressed="true">INSERT</a>
-	<a href="#" class="btn btn-primary btn-lg active" role="button"
+	<a href="deletion.jsp" class="btn btn-primary btn-lg active" role="button"
 		aria-pressed="true">DELETE</a>
-	<a href="#" class="btn btn-primary btn-lg active" role="button"
+	<a href="updation.jsp" class="btn btn-primary btn-lg active" role="button"
 		aria-pressed="true">UPDATE</a>
 	<a href="list.jsp" class="btn btn-primary btn-lg active" role="button"
 		aria-pressed="true">SHOW TABLE</a>
