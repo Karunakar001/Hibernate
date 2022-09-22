@@ -16,7 +16,7 @@ import dto.Customer;
 public class CustomerSave extends HttpServlet {
 
 	static Customer customer;
-	static CustomerDao cd = new CustomerDao();
+	static Customerdao cd = new Customerdao();
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

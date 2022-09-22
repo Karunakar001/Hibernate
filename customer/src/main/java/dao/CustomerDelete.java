@@ -17,7 +17,7 @@ public class CustomerDelete extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		int id1=Integer.parseInt(req.getParameter("id"));
-		CustomerDao cd =new CustomerDao();
+		Customerdao cd =new Customerdao();
 		cd.deleteCustomer(id1);
 		PrintWriter pw = resp.getWriter();
 		pw.write("<html><body><h2>DELETED SUCCESSFULLY</h2></body></html>");

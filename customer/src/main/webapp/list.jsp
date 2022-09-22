@@ -1,9 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@page import="dao.CustomerDao"%>
+<%@page import="dao.Customerdao"%>
 <%@page import="dto.Customer"%>
 <%@page import="java.util.*"%>
-
+<%-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%> --%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,10 +18,12 @@
 </head>
 <body>
 
-	<%
-	CustomerDao cd = new CustomerDao();
-	List<Customer> list = cd.listAllObject();
-	%>
+	<%Customerdao cdao = new Customerdao();%>
+	<%List<Customer> list = cdao.listAllObject();%>
+	
+	
+	
+	
 	<table class="table table-striped">
 		<tr>
 			<th>Id</th>
@@ -39,7 +42,7 @@
 			<td><%=c.getEmail()%></td>
 			<td><%=c.getNationality()%></td>
 			<td><a href="delete?id=<%=c.getId()%>" type="button"><button>DELETE</button></a></td>
-			<td><a href="update?id=<%=c.getId()%>" type="button"><button>UPDATE</button></a></td>
+			<td><a href="updation.jsp?id=<%=c.getId()%>" type="button"><button>UPDATE</button></a></td>
 		</tr>
 		<%
 		}
